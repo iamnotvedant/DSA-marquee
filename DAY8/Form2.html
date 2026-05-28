@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+
+    <style>
+      input {
+        outline: none;
+        border: none;
+        border-bottom: 2px dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Sports Physical Form</h2>
+
+    <form action="actionPage.html" method="get">
+      <fieldset>
+        <legend>Athlete Information</legend>
+
+        <ul>
+          <li>
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Enter your name..."
+            />
+          </li>
+          <li>
+            <label for="school_team">School/Team:</label>
+            <input
+              type="text"
+              id="school_team"
+              name="school_team"
+              placeholder="Enter your school or Team"
+            />
+          </li>
+          <li>
+            <label for="sports">Sports:</label>
+            <input
+              type="text"
+              id="sports"
+              name="sport"
+              placeholder="Sports..."
+            />
+          </li>
+          <li>
+            <label for="parent_guardian">Parent/ Guardian Name:</label>
+            <input
+              type="text"
+              id="parent_guardian"
+              name="parent_guardian"
+              placeholder="Parent or Guardian.."
+              required
+            />
+          </li>
+
+          <li>
+            <label for="contact">Contact Number:</label>
+            <input
+              type="tel"
+              id="contact"
+              name="contact"
+              placeholder="Example: +91 525252521"
+              required
+            />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Medical History for Athlete</legend>
+
+        <ul>
+          <li>
+            History Of Concussions:
+            <input
+              type="radio"
+              name="concussions"
+              id="concussions-yes"
+              value="concussions-yes"
+            />
+            <label for="concussions-yes">Yes</label>
+            <input
+              type="radio"
+              name="concussions"
+              id="concussions-no"
+              value="concussions-no"
+            />
+            <label for="concussions-no">No</label>
+          </li>
+          <li>
+            <label for="previous_surgeries"> Previous Surgeries:</label>
+
+            <input
+              type="text"
+              name="previous_surgeries"
+              id="previous_surgeries"
+            />
+          </li>
+          <li></li>
+          <li></li>
+        </ul>
+      </fieldset>
+      <label for="phone">Phone Number</label>
+      <label for="website">Enter your website:</label>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
