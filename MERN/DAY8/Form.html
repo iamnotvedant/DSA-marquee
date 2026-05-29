@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+input
+{
+outline: none;
+border: none;
+border-bottom:
+2px dotted;
+}
+</style>
+</head>
+<body>
+    <h2>Sports Physical Form</h2>
+    <form action="actionPage.html" method="get">
+        <fieldset>
+            <legend>Athelete Information </legend>
+                <ul>
+                    <li>
+                        <label for="fname">Name:</label>
+                        <input type="text" 
+                        id ="fname"
+                        placeholder="Enter your name" required/>
+                        
+                    </li>
+                    <li>
+                        <label for ="school_team">School/Team:</label>
+                        <input type="text" id ="fname"  placeholder="Enter your school/team" required/>
+                    </li>
+                    <li>
+                         <label for ="sports">Sports:</label>
+                         <input type="text" id ="fname"  placeholder="Sport name" required/>
+                         
+                    </li>
+                    <li>
+                         <label for ="Parent/Gaurdian Name">Parent/Gaurdian Name:</label>
+                         <input type="text" id ="fname"  placeholder="name of parent/guardian" required/>
+                    </li>
+                    <li>
+                         <label for ="contact info">Conatct Info:</label>
+                         <input type="text" id ="fname"  placeholder="ex: = +91 999xxxxxx" required/>
+                    </li>
+                </ul>
+           
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Medical History For Atheletes</legend>
+            <ul>
+                <li>
+                    <p> History of concussions:</p>
+                    <input type = "radio"
+                     name="concussions" id ="concussions-yes" required/>
+                    <label for="concussions-yes">Yes</label>
+                    <input type ="radio"
+                    name="concussions" id="concussions-no" required/>
+                     <label for="concussions-no">No</label>
+                     
+            </li>
+            <li>
+                <label fpr ="Previous_Surgeries:"">Previous Surgeries:</label>
+                <input
+                    type ="text"
+                    name="previous_surgeries"
+                    id="previous_surgeries"
+                    required/>
+            </li>
+
+            <li>
+                    <p> Any Bone Fractures:</p>
+                    <input type = "radio"
+                     name="fractures" id ="fractures-yes" required/>
+                    <label for="fractures-yes">Yes</label>
+                    <input type ="radio"
+                    name="fractures" id="fractures-no" required/>
+                     <label for="fractures-no">No</label>
+                     
+            </li>
+        
+            <li>
+                <p> Asthama or Breathing problems:</p>
+                    <input type = "radio"
+                     name="Asthama" id ="Asthama-yes" required/>
+                    <label for="Asthama-yes">Yes</label>
+                    <input type ="radio"
+                    name="Asthama" id="Asthama-no" required/>
+                     <label for="Asthama-no">No</label>
+            </li>
+        </ul>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>
+                Date/Time</legend>
+                <ul>
+                    <li>
+                        <label for="dob">DOB</label>
+                        <input type="date" name="dob" id="dob" required />
+                    </li>
+                    <li>
+                        <label for="Time">Time</label>
+                        <input type="time" name="Time" id="Time" required />
+                    </li>
+
+                    <li>
+                        <label for="date-time">Time and date</label>
+                        <input
+                        type="datetime-local"
+                        name="date-time"
+                        id="date-time"
+                        required/>
+                    </li>
+                </ul>
+            
+        </fieldset>
+
+
+        <fieldset>
+            <legend>
+                TextName
+            </legend>
+            <ul>
+                <li>
+                    <p>
+                    <label for="summary">Summary of you last Operation:</label>
+                       
+                    </p>
+                    <textarea name="" 
+                    id="summary" rows="8" cols="100" placeholder="Thy summary"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Drop the DAMN File</legend>
+            <label for="file">Drop your last medical Report:</label>
+            <input
+                type="File"
+                name=""
+                id="file"
+                accept=".jpg"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Checkbox/Select/Number
+            </legend>
+
+            <ul>
+                <li>
+                    <input type="checkbox"
+                     name="Terms"
+                     id="Terms"
+                     value="yes-Terms"
+                     required/>
+                     <label for="Terms" name="">You've read those Terms and Conditions</label>
+                </li>
+                <li>
+                    <input type="checkbox"
+                    name=""
+                    id=""/>
+                    <label name="">Have you?</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Number Input</legend>
+            <label for="HB">Precentage of Haemoglobin in the body</label>
+                <input 
+                type="number"
+                name=""
+                id="HB"/>
+            </body>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Belonging
+            </legend>
+            <label for="states" id ="states">Select Your State</label>
+
+            <select name="states" id ="states">
+                <option value="Null">--Select Your State--</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Kerela">Kerela</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+            <ul>
+            <li><label for="email">Email</label>
+            <input type="email" name="email" id="email"/>
+            <label for="range"></label></li></ul>
+
+            <input type="range"
+             name="range"
+             id="range"
+             min="0"
+             max="10"
+             value="5"/>
+        </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
