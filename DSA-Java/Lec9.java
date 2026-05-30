@@ -1,5 +1,5 @@
 public class Lec9 {
-    //Eucledia's Algorithm
+    //Eucledian's Algorithm
     public static void main(String[] args) {
         int max = 60;
         int min = 18;
