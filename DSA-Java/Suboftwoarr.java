@@ -41,7 +41,7 @@ public class Suboftwoarr{
             k--;
         }
 
-        // Remove leading zeros
+
         int start = 0;
 
         while (start < result.length - 1 && result[start] == 0) {
