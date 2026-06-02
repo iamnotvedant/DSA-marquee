@@ -1,42 +1,362 @@
-{
-	// Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	//
-	// You can also restrict snippets to specific files using include/exclude patterns:
-	// "Test snippet": {
-	// 	"prefix": "test",
-	// 	"body": "test('$1', () => {\n\t$0\n});",
-	// 	"include": ["**/*.test.ts", "*.spec.ts"],
-	// 	"exclude": ["**/temp/*.ts"],
-	// 	"description": "Insert test block"
-	// }
-   "CSS Boilerplate": {
-    "prefix": "cssreset",
-    "body": [
-      "* {",
-      "    margin: 0;",
-      "    padding: 0;",
-      "    box-sizing: border-box;",
-      "    font-family: gilroy, sans-serif;",
-      "}",
-      "",
-      "html,",
-      "body {",
-      "    height: 100vh;",
-      "    width: 100vw;",
-      "}"
-    ],
-    "description": "Insert CSS reset boilerplate"
-  }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#e6e6e6;
+}
+
+.wrapper{
+    width:76%;
+    margin:40px auto;
+}
+
+/* TOP BAR */
+
+.top-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.left-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.flipkart-btn{
+    background:#ffe100;
+    border:none;
+    padding:12px 35px;
+    border-radius:8px;
+    font-size:20px;
+}
+
+.travel-btn{
+    background:#ddd;
+    border:none;
+    padding:12px 35px;
+    border-radius:8px;
+    font-size:20px;
+}
+
+/* SEARCH ROW */
+
+.search-row{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:15px 0;
+}
+
+.search-box{
+    flex:5;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#f0f5ff;
+    padding:0 15px;
+    border-radius:8px;
+    height:45px;
+}
+
+.search-box i{
+    color:#717478;
+    font-size:16px;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+.green-box{
+    flex:1;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* CATEGORY BOXES */
+
+.boxes{
+    margin-top:15px;
+    display:grid;
+    grid-template-columns:repeat(14,1fr);
+    gap:4px;
+}
+
+.box{
+    height:72px;
+    border:4px solid #b6ff00;
+    background:#dcdcdc;
+    padding:8px;
+    font-size:14px;
+}
+
+#icons-box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:15px;
+    margin-top:15px;
+    overflow-x:auto;
+    gap:20px;
+}
+
+.icons-items{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    min-width:70px;
+}
+
+.icons-items img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+}
+
+.icons-items p{
+    margin-top:8px;
+    font-size:14px;
+}
+
+/* AD AREA */
+
+.ads-wrapper{
+    /*background:#cfcfcf;*/
+    margin-top:20px;
+    padding:0px;
+}
+
+.ads{
+    display:flex;
+    gap:10px;
+}
+
+.ad{
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    font-size:18px;
+    overflow: hidden;
+    padding: 0;
+}
+.ad img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+display:block;
+}
+
+.ad1{
+    flex:1.8;
+    background:#50dfe3;
+    
+}
+
+.ad2{
+    flex:1.8;
+    background:#de1f38;
+}
+
+.ad3{
+    flex:1;
+    background:#ecebd4;
+}
+
+/* Container */
+
+#home-decor{
+    height: auto;
+    background-color: #cd6815;
+    margin: 10px;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#home-decor-top{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.fa-sharp{
+    color:#ffffff;
+    background-color: black;
+    padding: 0.5rem;
+}
+#home-decors-cards-container{
+    display: flex;
+
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    font-family: var(--cards-font-fammily);
+    
+    
+}
+.home-decor-cards{
+    height:200px;
+    width:180px;
+    background-color:white;
+    margin:1rem;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.home-decor-cards img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+}
+
+.home-decor-cards p:first-of-type{
+    margin-top:10px;
+    font-size:16px;
+}
+
+.home-decor-cards p:last-of-type{
+    margin-top:5px;
+    font-weight:bold;
+}
+footer {
+  width: 100vw;
+  background-color: rgb(39, 38, 38);
+  color: beige;
+}
+
+/*#spotlight-container{
+
+     margin: 10px;
+  border-radius: var(--brand-border-radius);
+
+}*/
+
+/*#spotlight-container h2{
+
+    margin-bottom:15px;
+
+}*/
+
+#spotlight-items-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:40px;
+    justify-items:center;
+    margin-top:20px;
+}
+
+.spotlight-items{
+    width:260px;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    text-align:center;
+    overflow: hidden;
+}
+
+.spotlight-items img{
+    width:260px;
+    height:350px;
+    border-radius:24px;
+    object-fit:cover;
+    display:block;
+}
+.spotlight-items p{
+    font-size:10px;
+    margin-top:80px;
+}
+
+.spotlight-items span{
+    display:block;
+    margin-top:8px;
+    color:#555;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#172337;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:60px 50px;
+    margin-top:40px;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    min-width:180px;
+}
+
+.footer-column h4{
+    color:#878787;
+    font-size:14px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.footer-column a{
+    color:white;
+    text-decoration:none;
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+.footer-column a:hover{
+    text-decoration:underline;
+}
+
+.footer-column p{
+    line-height:1.8;
+    font-size:15px;
+}
+
+.address-column{
+    max-width:320px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.social-icons i{
+    width:45px;
+    height:45px;
+    background:#2c415c;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-size:18px;
 }
