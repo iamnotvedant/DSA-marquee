@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
     display:flex;
@@ -6,6 +7,8 @@ body{
     background:#1e1e1e;
 }
 
+=======
+>>>>>>> 5b6220f4dac2d4ac94bba84cbd3357ab2f67d708
 .grid-container{
     width:800px;
     height:450px;
@@ -28,7 +31,11 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+<<<<<<< HEAD
     border-radius: 10px;
+=======
+
+>>>>>>> 5b6220f4dac2d4ac94bba84cbd3357ab2f67d708
     font-size:30px;
     font-weight:bold;
     color:white;
@@ -38,7 +45,11 @@ body{
 
 /* Left Tall Box */
 .box1{
+<<<<<<< HEAD
     background:#80b3ff;
+=======
+    background:#79aeff;
+>>>>>>> 5b6220f4dac2d4ac94bba84cbd3357ab2f67d708
     grid-row:1 / 4;
     grid-column:1;
 }
@@ -52,7 +63,11 @@ body{
 
 /* Top Right Box */
 .box3{
+<<<<<<< HEAD
     background:#ac9aff;
+=======
+    background:#bdb0f8;
+>>>>>>> 5b6220f4dac2d4ac94bba84cbd3357ab2f67d708
     grid-column:4;
     grid-row:1;
 }
@@ -86,6 +101,7 @@ body{
 }
 
 /* Right Tall Box */
+<<<<<<< HEAD
 /* Right Tall Box */
 .box8{
     background:#cfccff;
@@ -164,4 +180,21 @@ body{
 .footer{
     border-radius:10px;
     border:2px solid white;
+=======
+.grid-container::after{
+    content:"8";
+    background:#cfccff;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    grid-column:4;
+    grid-row:2 / 4;
+
+    border:2px solid rgb(96, 84, 255);
+>>>>>>> 5b6220f4dac2d4ac94bba84cbd3357ab2f67d708
 }
