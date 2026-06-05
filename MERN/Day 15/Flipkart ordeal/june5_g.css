@@ -1,0 +1,94 @@
+:root{
+    --bg-color:#f4f2e8;
+
+    --purple:#d4caef;
+    --pink:#e796ad;
+    --green:#d6e6a6;
+    --yellow:#eed97b;
+    --orange:#e6a27d;
+    --blue:#d4e2ee;
+
+    --text-color:#2f2f2f;
+    --radius:28px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg-color);
+    font-family:Arial, Helvetica, sans-serif;
+    padding:20px;
+    min-height:100vh;
+}
+
+.bento-grid{
+    max-width:1000px;
+    margin:auto;
+    width:100%;
+
+    display:grid;
+    gap:20px;
+    
+
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:260px 180px 180px;
+
+    grid-template-areas:
+    "purple pink pink"
+    "purple green yellow"
+    "orange orange blue";
+}
+
+.card-purple{
+    background:var(--purple);
+    grid-area:purple;
+    padding-top:40px
+}
+
+.bento-item{
+    padding:15px;
+    border-radius:28px;
+    overflow:hidden;
+}
+
+.card-pink{
+    background:var(--pink);
+    grid-area:pink;
+}
+
+.card-green{
+    background:var(--green);
+    grid-area:green;
+}
+
+.card-yellow{
+    background:var(--yellow);
+    grid-area:yellow;
+}
+
+.card-orange{
+    background:var(--orange);
+    grid-area:orange;
+}
+
+.card-blue{
+    background:var(--blue);
+    grid-area:blue;
+}
+
+.bento-item h2{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:10px;
+    color:#2d2d2d;
+}
+
+.bento-item p{
+    font-size:14px;
+    line-height:1.35;
+    color:#3f3f3f;
+}
