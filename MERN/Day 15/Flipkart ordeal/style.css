@@ -367,3 +367,16 @@ footer {
     cursor:pointer;
     font-size:18px;
 }
+
+
+@media (max-width: 1000px) {
+    body{
+        background: blue;
+    }
+
+    .top-nav, .header-section{
+        background: crimson;
+        border-radius: 20px;
+    }
+    
+}
