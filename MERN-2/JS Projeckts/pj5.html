@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pj5.css">
+</head>
+<body>
+
+    <div class="canvas-container">
+        <nav id="top-bar">
+            <button class="theme-btn">Dark Mode</button>
+            <button class="theme-btn">Light Mode</button>
+        </nav>
+        <h1><b>Drawing Pad</b></h1>
+        <canvas id="myCanvas"></canvas>
+        <div id="toolbar">
+        <input type="color" id="color-btn">
+
+        <div class="range-container">
+            <label for="size-slider" style="font-family: monospace;">SELECT SIZE</label>
+            <input type="range" id="size-slider" min="1" max="50" value="5">
+           
+        </div>
+
+        <button id="clear-btn">CLEAR</button>
+    </div>
+    </div>
+    
+    <script src="pj5.js"></script>
+</body>
+</html>
+
